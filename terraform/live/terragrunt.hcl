@@ -49,7 +49,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "tabler-terraform-state"
+    bucket = "test-terraform-state"
     key = "${path_relative_to_include()}/terraform.tfstate"
     region = "ru-msk"
     access_key = "${get_env("TF_VAR_aws_access_key")}"
